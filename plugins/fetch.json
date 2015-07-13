@@ -1,0 +1,16 @@
+{
+    "com.phonegap.plugins.bluetooth": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tanelih/phonegap-bluetooth-plugin.git",
+            "subdir": "."
+        }
+    },
+    "com.megster.cordova.bluetoothserial": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/don/BluetoothSerial.git",
+            "subdir": "."
+        }
+    }
+}

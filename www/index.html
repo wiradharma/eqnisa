@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>eq-nisa</title>
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+		<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/alertify.core.css" />
+		<link rel="stylesheet" type="text/css" href="css/alertify.bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/eq.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+
+
+		<script src="js/jquery.js"></script>
+		<script src='jquery-ui/jquery-ui.min.js'></script>
+        <script src="js/alertify.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+		
+		</script>
+    </head>
+    <body>
+		
+		<div class="app container">
+			<!--
+            <h1>eq nisa</h1>
+            
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                
+            </div>
+           -->
+        
+
+        
+			<div id="eq-div" >
+				</br>
+				<p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+					<span class="ui-icon" style="float:left; margin:-2px 5px 0 0;"> </span>
+					Control
+				</p>
+				<div id="control1" style="margin:15px;">
+					<button class="btn-success" id="connectButton" width="200" height="200">Connect</button>
+					<div id="message">Hello.</div>
+				</div>
+				
+				<p class="ui-state-default ui-corner-all" style="padding:4px;margin-top:4em;">
+					<span class="ui-icon ui-icon-signal" style="float:left; margin:-2px 5px 0 0;"></span>
+					preset
+				</p>
+				<div id="preset-div">
+					<button class="btn-primary" id="p-flat">flat</button>
+					<button class="btn-primary" id="p-jazz">jazz</button>
+					<button class="btn-primary" id="p-rock">rock</button>
+					
+					<button class="btn-primary" id="p-pop">pop</button>
+					<button class="btn-primary" id="p-classic">class</button>
+				
+					</br>
+					<button class="btn-primary" id="p-user1">user1</button>
+					<button class="btn-primary" id="p-user2">user2</button>
+					<button class="btn-primary" id="p-user3">user3</button>
+					<button class="btn-primary" id="p-user4">user4</button>
+					<button class="btn-primary" id="p-user5">user5</button>
+					</br>
+					<button class="btn-warning" id="ps-user1">save1</button>
+					<button class="btn-warning" id="ps-user2">save2</button>
+					<button class="btn-warning" id="ps-user3">save3</button>
+					<button class="btn-warning" id="ps-user4">save4</button>
+					<button class="btn-warning" id="ps-user5">save5</button>
+					</br>
+					<button class="btn-success" id="v-update">update</button>
+				</div>
+			
+				<p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+					<span class="ui-icon ui-icon-volume-on" style="float:left; margin:-2px 5px 0 0;"></span>
+					Master volume
+				</p>
+				<div id="master" style="width:260px; margin:15px;">
+					
+				</div>
+				
+				<p class="ui-state-default ui-corner-all" style="padding:4px;margin-top:4em;">
+					<span class="ui-icon ui-icon-signal" style="float:left; margin:-2px 5px 0 0;"></span>
+					Graphic EQ
+				</p>
+				<div class="row">
+					<div id="eq-left" class="col-md-4">
+						<span data-chan="1" data-band="0">50</span>
+						<span data-chan="1" data-band="1">50</span>
+						<span data-chan="1" data-band="2">50</span>
+						<span data-chan="1" data-band="3">50</span>
+						<span data-chan="1" data-band="4">50</span>
+						<span data-chan="1" data-band="5">50</span>
+						<span data-chan="1" data-band="6">50</span>
+						<span data-chan="1" data-band="7">50</span>
+						<span data-chan="1" data-band="8">50</span>
+						<span data-chan="1" data-band="9">50</span>
+					</div>
+					<div id="control2" class="col-md-1"> </div>
+				
+					<div id="eq-right" class="col-md-4">
+						<span data-chan="0" data-band="0">50</span>
+						<span data-chan="0" data-band="1">50</span>
+						<span data-chan="0" data-band="2">50</span>
+						<span data-chan="0" data-band="3">50</span>
+						<span data-chan="0" data-band="4">50</span>
+						<span data-chan="0" data-band="5">50</span>
+						<span data-chan="0" data-band="6">50</span>
+						<span data-chan="0" data-band="7">50</span>
+						<span data-chan="0" data-band="8">50</span>
+						<span data-chan="0" data-band="9">50</span>
+					</div>
+				
+				</div>
+			
+				<div class="row">
+					<div id="lab-left" class="col-md-4">
+						<label data-chan="1" data-band="0">16K</label>
+						<label data-chan="1" data-band="1">8K</label>
+						<label data-chan="1" data-band="2">4K</label>
+						<label data-chan="1" data-band="3">2K</label>
+						<label data-chan="1" data-band="4">1K</label>
+						<label data-chan="1" data-band="5">500</label>
+						<label data-chan="1" data-band="6">250</label>
+						<label data-chan="1" data-band="7">125</label>
+						<label data-chan="1" data-band="8">64</label>
+						<label data-chan="1" data-band="9">32</label>
+					</div>
+					<div id="control2lab" class="col-md-1">
+
+					</div>
+					
+					<div id="lab-right" class="col-md-4">
+						<label data-chan="0" data-band="0">16K</label>
+						<label data-chan="0" data-band="1">8K</label>
+						<label data-chan="0" data-band="2">4K</label>
+						<label data-chan="0" data-band="3">2K</label>
+						<label data-chan="0" data-band="4">1K</label>
+						<label data-chan="0" data-band="5">500</label>
+						<label data-chan="0" data-band="6">250</label>
+						<label data-chan="0" data-band="7">125</label>
+						<label data-chan="0" data-band="8">64</label>
+						<label data-chan="0" data-band="9">32</label>
+					</div>
+					
+				</div>
+			
+			</div>
+        
+		</div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/eq.js"></script>
+        
+    </body>
+</html>

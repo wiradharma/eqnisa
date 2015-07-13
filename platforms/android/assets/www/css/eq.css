@@ -1,0 +1,36 @@
+
+
+
+#eq-left > span{
+ height:250px;
+ float:left; 
+ margin:7px
+}
+
+#eq-div{
+height:500px;
+	background-color:
+
+}
+
+#eq-right > span{
+height:250px; float:left; margin:7px
+}
+
+#lab-left > label {
+float:left; margin:4px;
+}
+#lab-right > label {
+float:left; margin:4px;
+}
+
+
+#control2 > span
+{
+height:250px; float:left; margin:3px
+}
+
+#control2lab > span
+{
+ float:left; margin:2px
+}

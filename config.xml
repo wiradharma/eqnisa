@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.jepit.eqnisa" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>eqnisa</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="contact@jepit.co.id" href="http://jepit.co.id">
+        Apache Cordova Team
+    </author>
+    <preference name="Orientation" value="landscape" />
+
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
